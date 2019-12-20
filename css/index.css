@@ -245,14 +245,18 @@ background:transparent !important;
 {
     margin-top:200px;
 }
-.jumbotron{
+.jumbotron
+{
     
 width: 480px;
 height: 280px;
 background: #FFFFFF !important;
 box-shadow: 0px 4px 20px rgba(145, 145, 145, 0.13);
 border-radius: 10px;
-
+}
+.jumbotron img
+{
+    position:absolute;
 }
 
 .jumbotron p
@@ -281,15 +285,14 @@ white-space:pre;
 }
 .button
 {
-    position: absolute;
 width: 157px;
 height: 25px;
 left: 110px;
 font-weight: 500;
 font-size: 14px;
 background:transparent;
-top: 125px;
-margin-left:10px;
+margin-top: 55px;
+margin-left:70px;
 box-sizing: border-box;
 border-radius: 200px;
 }
