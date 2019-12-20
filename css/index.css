@@ -5,10 +5,9 @@
     box-sizing: border-box;
     font-family: Montserrat;
     
+    
 }
-body{
-    overflow-x: hidden;
-}
+
 .navbar,
 .navbar-expand-md
 {
@@ -155,9 +154,186 @@ background:transparent;
         color:#ffb444;
         border-color:#ffb444;
     }
-
+/*
 .container-jumbotron
   {
       margin-top:200px;
       color:white;
+      margin-left:100px;
+      margin-right:100px;
+      
   }
+.features-heading-one,
+.features-heading-two,
+.features-heading-three,
+.features-heading-four
+{
+    color:black;
+    font-size: 18px !important;
+    white-space: pre;
+    font-weight: 600;
+    display:inline-block;
+}
+
+.lead
+{
+    color:black;
+    font-weight: 500;
+font-size: 18px !important;
+}
+.jumbotron
+{
+     width: 480px; 
+     padding:30px !important;
+     height: 320px; 
+    margin-right:0px;
+    box-shadow: 0px 4px 20px rgba(145, 145, 145, 0.13);
+    border-radius: 10px;
+    background:white !important;
+}
+.btn,
+.btn-primary,
+.btn-lg
+{
+    width: 157px;
+height: 35px;
+border-radius:50px !important;
+}
+.btn-one
+{
+  
+font-style: normal;
+font-weight: 500;
+font-size: 14px !important;
+text-align: center;
+color:#3D92F6 !important;
+border:1px solid #3D92F6 !important;
+background:transparent !important;
+}
+.btn-two
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    text-align: center; 
+    color:#5E44FF !important;
+border:1px solid #5E44FF!important;
+background:transparent !important;
+}
+.btn-three
+{
+    font-style: normal;
+font-weight: 500;
+font-size: 14px !important;
+text-align: center;
+color: #4EE058 !important;
+border:1px solid  #4EE058 !important;
+background:transparent !important;
+}
+.btn-four
+{
+    font-style: normal;
+font-weight: 500;
+font-size: 14px !important;
+text-align: center;
+color:#FFB444 !important;
+border:1px solid #FFB444!important;
+background:transparent !important;
+}
+*/
+.feature-jumbotron
+{
+    margin-top:200px;
+}
+.jumbotron{
+    
+width: 480px;
+height: 280px;
+background: #FFFFFF !important;
+box-shadow: 0px 4px 20px rgba(145, 145, 145, 0.13);
+border-radius: 10px;
+
+}
+
+.jumbotron p
+{
+    position: absolute;
+width: 344px;
+height: 110px;
+left: 110px;
+}
+
+.jumbotron span 
+{
+    display:inline-block;
+    position: absolute;
+width: 312px;
+height: 44px;
+left: 110px;
+
+}
+.jumbotron-heading
+{
+    font-style: normal;
+font-weight: 600;
+font-size: 1em;
+white-space:pre;
+}
+.button
+{
+    position: absolute;
+width: 157px;
+height: 25px;
+left: 110px;
+font-weight: 500;
+font-size: 14px;
+background:transparent;
+top: 125px;
+margin-left:10px;
+box-sizing: border-box;
+border-radius: 200px;
+}
+.button-one
+{
+    color:#3D92F6;
+    border:1px solid #3D92F6;
+}
+.button-one:hover
+{
+    color:#ffffff;
+    border:1px solid #3D92F6;
+    background:#3D92F6;
+}
+.button-two
+{
+    color: #5E44FF;
+    border:1px solid #5E44FF;
+}
+.button-two:hover
+{
+    color:white;
+    border:1px solid #5E44FF;
+    background-color:#5E44FF;
+}
+.button-three
+{
+    color: #4EE058;
+    border:1px solid  #4EE058;;
+}
+.button-three:hover
+{
+    color:#ffffff;
+    border:1px solid  #4EE058;
+    background: #4EE058;
+}
+.button-four
+{
+    color: #FFB444;;
+    border:1px solid  #FFB444;;
+}
+.button-four:hover
+{
+    color:#ffffff;
+    background: #FFB444;
+    border:1px solid  #FFB444;
+}
