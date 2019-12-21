@@ -2,10 +2,12 @@
 {
     margin:0px;
     padding:0px;
-    box-sizing: border-box;
     font-family: Montserrat;
-    
-    
+    box-sizing: border-box;
+}
+body
+{
+    position:relative;
 }
 
 .navbar,
@@ -43,14 +45,51 @@ line-height: 15px;
 }
 .header-image
 {
-    background-image:linear-gradient(#0009,#0009), url("../images/header-image-min.png");
+    background-image: url("../images/head-new.png");
     height:100vh;
     width:100%;
-    overflow-x: hidden;
-    background-attachment:fixed;
+    position: relative;
+    margin-top:30px;
+    overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+.search-button
+{
+    position:absolute;
+    width: 132.5px;
+height: 33px;
+left: 796.5px;
+border: 1px solid #FFB444;
+box-sizing: border-box;
+border-radius: 50px;
+top: 266px;
+color:#FFB444;
+background:transparent;
+}
+.search-button:hover
+{
+    color:white;
+    background:#ffb444;
+}
+.organise-button
+{
+    position:absolute;
+    width: 132px;
+height: 33px;
+left: 797px;
+border: 1px solid #FFB444;
+background:transparent;
+box-sizing: border-box;
+border-radius: 50px;
+top: 575.2px;
+color:#FFB444;
+}
+.organise-button:hover
+{
+    color:white;
+    background:#ffb444;
 }
 .heading-over-header,
 .h1
@@ -64,13 +103,31 @@ color:#ffffff;
     transform:translate(105px,180px);
 }
 
+.heading-over-section-one
+{
+    position: absolute;
+width: 216px;
+height: 59px;
+left: 135px;
+top: 770px;
 
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #FFB444;
+}
 
 
 .swiper-container {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    margin-top:200px;
+    position: absolute;
+    left:114px;
+    top: 200px;
+    overflow-x: hidden;
     
   }
   .swiper-slide 
@@ -125,8 +182,7 @@ color:#ffffff;
       height:507px;
       width:300px;
       text-align: center;
-      
-      background-color:#0009;
+    background:linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #1D1D1D 100%);
   }
   .overlay-over-image h1
   {
@@ -154,11 +210,28 @@ background:transparent;
         color:#ffb444;
         border-color:#ffb444;
     }
-/*
-.container-jumbotron
+.heading-over-section-two
+{
+    position: absolute;
+width: 183px;
+height: 59px;
+left: 117px;
+top: 1450px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #FFB444;
+
+}
+.container
   {
-      margin-top:200px;
+      margin-top:380px;
       color:white;
+      width:80%;
       margin-left:100px;
       margin-right:100px;
       
@@ -168,10 +241,11 @@ background:transparent;
 .features-heading-three,
 .features-heading-four
 {
-    color:black;
+    color:black !important;
     font-size: 18px !important;
     white-space: pre;
     font-weight: 600;
+    margin-left:10px;
     display:inline-block;
 }
 
@@ -185,7 +259,8 @@ font-size: 18px !important;
 {
      width: 480px; 
      padding:30px !important;
-     height: 320px; 
+     height: 300px;
+      
     margin-right:0px;
     box-shadow: 0px 4px 20px rgba(145, 145, 145, 0.13);
     border-radius: 10px;
@@ -197,7 +272,12 @@ font-size: 18px !important;
 {
     width: 157px;
 height: 35px;
+margin-left:75px;
 border-radius:50px !important;
+}
+.jumbotron p
+{
+    margin-left:75px;
 }
 .btn-one
 {
@@ -210,6 +290,11 @@ color:#3D92F6 !important;
 border:1px solid #3D92F6 !important;
 background:transparent !important;
 }
+.btn-one:hover
+{
+    background:#3D92F6 !important;
+    color:white !important;
+}
 .btn-two
 {
     font-style: normal;
@@ -219,6 +304,11 @@ background:transparent !important;
     color:#5E44FF !important;
 border:1px solid #5E44FF!important;
 background:transparent !important;
+}
+.btn-two:hover
+{
+    background:#5E44FF !important;
+    color:white !important;
 }
 .btn-three
 {
@@ -230,6 +320,11 @@ color: #4EE058 !important;
 border:1px solid  #4EE058 !important;
 background:transparent !important;
 }
+.btn-three:hover
+{
+    color:white !important;
+    background:#4EE058 !important;
+}
 .btn-four
 {
     font-style: normal;
@@ -240,103 +335,186 @@ color:#FFB444 !important;
 border:1px solid #FFB444!important;
 background:transparent !important;
 }
-*/
-.feature-jumbotron
+.btn-four:hover
 {
-    margin-top:200px;
+    color:white !important;
+    background:#ffb444 !important;
 }
-.jumbotron
+.heading-over-section-three
 {
-    
-width: 480px;
-height: 280px;
-background: #FFFFFF !important;
-box-shadow: 0px 4px 20px rgba(145, 145, 145, 0.13);
-border-radius: 10px;
+    position: absolute;
+width: 125px;
+height: 30px;
+top: 2300px;
+left:150px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+color: #FFB444;
 }
-.jumbotron img
+.bootstrap-card-container
 {
+    width: 100%;
+    height: 100%;
+    margin-left:0px;
+    margin-top:-50px;
+}
+.card
+{
+    border:none !important;
+    box-shadow: 0px 4px 20px rgba(145, 145, 145, 0.13);
+}
+
+.card-title
+{
+    font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+text-align: justify;
+color: #121E32;
+}
+.card-text
+{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+text-align: justify;
+color: #899AAC;
+}
+.card-button
+{
+    font-weight: 500 !important;
+font-size: 18px !important;
+margin-left:-58px;
+text-align: center;
+line-height:20px !important;
+color: #FFB444 !important;
+background:#ffffff !important;
+border-color:#ffb444 !important;
+width: 180px;
+height: 34px;
+}
+.card-button:hover
+{
+    background:#ffb444 !important;
+    color:white !important;
+}
+.heading-over-section-four
+{
+    position: absolute;
+width: 435px;
+height: 30px;
+left: 114px;
+top: 2950px;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+color: #FFB444;
+}
+
+.carousel-control-prev-icon
+{
+    background-image:url("../images/arrow-left.png") !important;
     position:absolute;
+    top:3150px !important;
+    left:150px !important;
 }
-
-.jumbotron p
+.carousel-control-next-icon
+{
+    background-image:url("../images/arrow-right.png") !important;
+    position:absolute;
+    top:3150px !important;
+    right:180px !important;
+}
+.heading-over-section-five
 {
     position: absolute;
-width: 344px;
-height: 110px;
-left: 110px;
+width: 158px;
+height: 30px;
+left: 114px;
+top: 3550px;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+color: #FFB444;
+}
+.centered-form{
+	position: absolute;
+width: 534px;
+height: 455px;
+left: 114px;
+top: 600px;
+background: #FFFFFF;
+box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.05), -10px 4px 20px rgba(0, 0, 0, 0.05);
+border-radius: 20px;
 }
 
-.jumbotron span 
+.contact-jumbotron
 {
-    display:inline-block;
-    position: absolute;
-width: 312px;
-height: 44px;
-left: 110px;
+    left:100px;
+}
+.contact-jumbotron p
+{
+    font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+color: rgba(0, 0, 0, 0.7);
 
 }
-.jumbotron-heading
+
+.contact-jumbotron h1
 {
     font-style: normal;
-font-weight: 600;
-font-size: 1em;
-white-space:pre;
-}
-.button
-{
-width: 157px;
-height: 25px;
-left: 110px;
+    margin-left:70px;
 font-weight: 500;
-font-size: 14px;
-background:transparent;
-margin-top: 55px;
-margin-left:70px;
-box-sizing: border-box;
-border-radius: 200px;
+font-size: 18px;
+line-height: 22px;
+color: #0E3660 ;
+white-space: pre;
 }
-.button-one
+
+.footer-container
 {
-    color:#3D92F6;
-    border:1px solid #3D92F6;
+    position:absolute;
+    top:4200px;
+    width: 100%;
+    padding:50px;
+height: 414px;
+overflow-x: hidden;
+background:#121e32;
+color:white !important;
 }
-.button-one:hover
+.footer-jumbotron ul
 {
-    color:#ffffff;
-    border:1px solid #3D92F6;
-    background:#3D92F6;
+    margin-top: 28px;
+    margin-left:0px;
 }
-.button-two
+.footer-jumbotron ul li
 {
-    color: #5E44FF;
-    border:1px solid #5E44FF;
-}
-.button-two:hover
-{
+    margin-bottom: 35px;
     color:white;
-    border:1px solid #5E44FF;
-    background-color:#5E44FF;
 }
-.button-three
+.footer-jumbotron ul li:hover
 {
-    color: #4EE058;
-    border:1px solid  #4EE058;;
+    color:#ffb444;
+    
 }
-.button-three:hover
+.column
 {
-    color:#ffffff;
-    border:1px solid  #4EE058;
-    background: #4EE058;
+    width:16.66%;
+    float:left;
+    overflow-x: hidden;
 }
-.button-four
+.footer-jumbotron p
 {
-    color: #FFB444;;
-    border:1px solid  #FFB444;;
-}
-.button-four:hover
-{
-    color:#ffffff;
-    background: #FFB444;
-    border:1px solid  #FFB444;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left:10px;
+    line-height: 14px;
 }
