@@ -1,513 +1,485 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head >
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>
-            IIMUN'19
-        </title>
-        <link type="image/x-icon" rel="icon" href="images/favicon.png">
-        <!-- Bootstrap Css -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+       <title>
+         IIMUN'19
+       </title>
+        <link  rel="icon" href="images/favicon.png">
 
-        <!-- Bootstrap Jquery and Javascript Files-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="css/swiper.min.css">
+         <!-- Bootstrap Css -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
+         <!-- Bootstrap Jquery and Javascript Files-->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <!-- Social Media Icons Stylesheet-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Swiper css initialized-->
+   <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <!-- Swiper javascript initialized-->
+    <script src="js/swiper.min.js"></script>
+   <!--Css file of index html file-->
+   <link rel="stylesheet" type="text/css" href="css/index.css">
+   
     </head>
-    <body>
-        <!-- Navbar-->
-        <nav class="navbar navbar-expand-md  navbar-dark">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">
-                <img src="images/navbar-logo.png" alt="IIUN'19 Logo">
+   
+    <body >
+   
+    <!-----------------------------------------Navigation Bar---------------------------------------------------------->
+
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top ">
+            <a class="navbar-brand" href="images/navbar-logo.png">
+            <img class="img-fluid" alt="IIMUN LOGO" src="images/navbar-logo.png">
             </a>
-          
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            
-            
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
-                <ul class="navbar-nav">
-                  <li class="nav-item active" id="myBtn">
-                    <a class="nav-link navbar-text" href="#">Home</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active" id="myBtn">
+                  <a class="nav-link navbar-text mx-3" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbar-text mx-3" href="#">Search For IMUN's</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbar-text mx-3" href="#">Organise IMUN</a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link navbar-text mx-3" href="#">Features</a>
                   </li>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                   <li class="nav-item">
-                    <a class="nav-link navbar-text" href="#">Search For IMUN's</a>
+                    <a class="nav-link navbar-text mx-3" href="#">About Us</a>
                   </li>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <li class="nav-item">
-                    <a class="nav-link navbar-text" href="#">Organise IMUN</a>
-                  </li>   
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="nav-link navbar-text mx-3" href="#">Blogs</a>
+                  </li>  
                   <li class="nav-item">
-                      <a class="nav-link navbar-text" href="#">Features</a>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <li class="nav-item">
-                      <a class="nav-link navbar-text" href="#">About Us</a>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <li class="nav-item">
-                      <a class="nav-link navbar-text" href="#">Blogs</a>
-                    </li>  
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <li class="nav-item">
-                      <a class="nav-link navbar-text" href="#">Login/Register 
-                           &nbsp;&nbsp;
-                          <i class="">&#x2192;</i>
-                      </a>
-                    </li>  
-                     
-                </ul>
+                    <a class="nav-link navbar-text" href="#">Login/Register 
+                        <i class="">&#x2192;</i>
+                    </a>
+                  </li>  
+                   
+              </ul>
             </div>
           </nav>
-          <br>
-          <!-- Header full size image-->
-          <div class="header-image header-image-container">
-            <button class="search-button">Search</button>
-            <button class="organise-button">Organise</button>
-              
-          </div>
-         
-          
-            <!-- Section two having swiper slider-->
-          <!-- Swiper -->
-          <h1 class="heading-over-section-one">Upcoming MUN Conferences</h1>
-  <div class="swiper-container">
-   
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-          <img src="images/seattle.png" height="507px" width="300px" class="swiper-image">
-          <div class="overlay-over-image">
-              <h1 >DXCIMUN &#13;&#10; 2019 </h1>
-           
-              <p>Seattle,USA</p>
-              <button>Know More &#x2192;</button>
-          </div>
-      </div>
-      <div class="swiper-slide">
-          <img src="images/washington.png" height="507px" width="300px" class="swiper-image">
-          <div class="overlay-over-image">
-            <h1>NMUN &#13;&#10; 2019 </h1>
-           
-            <p>Washington DC</p>
-            <button>Know More &#x2192;</button>
-          </div>
-        </div>
-      <div class="swiper-slide">
-          <img src="images/tokyo.png" height="507px" width="300px" class="swiper-image">
-          <div  class="overlay-over-image">
-            <h1 style="margin-top:265px;">Harvard &#13;&#10; World&#13;&#10; MUN 2020 </h1>
-           
-            <p>Tokyo,Japan</p>
-            <button>Know More &#x2192;</button>
-          </div>
-        </div>
+         <!------------------------------------------ Header full size image------------------------------------------>
+
+         <div class="header-bg">
+          <div class="flex-container   ">
+            <div class="flex-item p-5">
+              <h1 class="left-align-heading mb-3">Discover over <span class="inline-yellow-color">1500 MUNs </span> Worldwide.</h1>
+              <p class="dummy-text ">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit</p>
+            </div>
+            <div class=" flex-item p-5 mt-5  ">
+            
+                <div class="media">
+                  <img src="images/earth.png" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h1 class="mt-0  mb-3 srch-mun">Search for MUNs</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      </p>
+                      <button class="btn btn-primary header-flex-btn">Search</button>
+                  </div>
+                </div>
+            
+            </div>
+            <div class="flex-item p-5"></div>
+            <div class="  flex-item p-5 " >
       
-    </div>
-    
-    <!-- Add Arrows -->
-    
-  </div>
-  <div class="swiper-button-next">
-    <img style=" position:absolute; bottom:520px; right:55px;"src="images/ellipse.png">
-    <div class="right-arrow">
-        <img style=" position:absolute; bottom:555px; right:78px;" src="images/right-arrow.png">
-    </div>
-</div>
-
-<div class="swiper-button-prev">
-    <img style=" position:absolute; left:1200px; bottom:420px;"src="images/ellipse.png" >
-    <div style=" position:absolute; left:1220px; bottom:468px;"class="left-arrow">
-        <img style=" position:absolute;" src="images/left-arrow.png">
-    </div>
-</div>
-<!-- section 3 having features of IIMUN-->
-<h1 class="heading-over-section-two">All you need in one place </h1>
-  <div class="container">
-    <div class="row first-row">
-        <div class="col-sm-6">
-            <div class="jumbotron">
-                <img  src="images/organisers.png">
-                <span><h1 class="display-4 features-heading-one"> Powerful Marketing and&#13;&#10; Conference Management Tools</h1></span>
-                <br>
-                    <a class=" btn-one btn btn-primary btn-lg " href="#" role="button">For Organisers</a>
-                 
-                  <br><br>
-                <p style="color: #6A6A6A;"class="lead">Run your conference's registration with a professional, powerful conference management system, hand-built for MUN. Advertise to 100k+ MUNers.</p>
-             </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="jumbotron">
-                <img  src="images/participants.png">
-                <span><h1 class="display-4 features-heading-two">The Biggest MUN Database&#13;&#10; With Easy Application</h1></span>
-                <br>
-                    <a class="btn btn-primary btn-lg btn-two" href="#" role="button">For Participants</a>
-                
-                  <br><br>
-                <p style="color: #6A6A6A;" class="lead">Let mymun's professional, experienced team help you find the best group rate for your hotel and flights!</p>
-    
+                <div class="media">
+                  <img src="images/person.png" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h1 class="mt-0  mb-3 org-mun">Organise your MUN</h1>
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    </p>
+                    <button class="btn btn-primary header-flex-btn">Organisers</button>
+                  </div>
                 </div>
-        </div>
-    </div>
-    <div class="row second-row">
-        <div class="col-sm-6">
-            <div class="jumbotron">
-                <img  src="images/groups.png">
-               <span> <h1 class="display-4 features-heading-three"> Personalized Travel Service&#13;&#10; for Your Delegation</h1></span>
-                <br>
-                    <a class="btn btn-primary btn-lg btn-three" href="#" role="button"> For Groups</a>
-                <br><br>
-                <p style="color: #6A6A6A;" class="lead">Special rates for flights and hotels as well as exclusive insurance deals, adventure tours, car rentals and more.</p>
-               
-                </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="jumbotron">
-                <img  src="images/everyone.png">
-              <span>  <h1 class="display-4 features-heading-four"> The Best Flights, Hotels,&#13;&#10; Trips and Insurances</h1></span>
-                <br>
-                    <a class="btn btn-primary btn-lg btn-four" href="#" role="button">For Everyone</a>
-                 
-                  <br><br>
-                <p style="color: #6A6A6A;" class="lead">Looking for your next conference? Browse the largest database of Model UN, Model EU, and other political simulation conferences and apply with one click!</p>
-              </div>
-        </div>
-    </div>
-  </div>
-
-
-  <!-- Section four of blogs -->
-     <!-- Swiper -->
-     <h1 class="heading-over-section-three">Our Blogs </h1>
-     <div class="bootstrap-card-container">
-     <div style="height:500px;" class="swiper-container ">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/blog-image.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Quality vs Quantity of delegates! What matters the most in a MUN?</h5>
-                  <p class="card-text">Posted by Jane Doe</p>
-                  <a href="#" class="card-button btn btn-primary">Read More 
-                    <i style="color:blue; ">&#x2192;</i>
-                  </a>
-                </div>
-              </div>
+           
+            </div>
           </div>
-          <div class="swiper-slide">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/blog-image.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Quality vs Quantity of delegates! What matters the most in a MUN?</h5>
-                  <p class="card-text">Posted by Jane Doe</p>
-                  <a href="#" class="card-button btn btn-primary">Read More
-                    <i style="color:blue;">&#x2192;</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          <div class="swiper-slide">
-            <div  class="card" style="width: 18rem;">
-                <img class="card-img-top" src="images/blog-image.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Quality vs Quantity of delegates! What matters the most in a MUN?</h5>
-                  <p class="card-text">Posted by Jane Doe</p>
-                  <a href="#" class="card-button btn btn-primary">Read More
-                    <i style="color:blue;">&#x2192;</i>
-                  </a>
-                </div>
-              </div>
-            </div>
           
         </div>
-        
-        <!-- Add Arrows -->
-        
-      </div>
-    </div>
-    <div class="swiper-button-next">
-      <img style="position:absolute; top:900px; right:70px;" src="images/ellipse.png">
-      <div class="right-arrow">
-          <img style="position:absolute; top:925px; right:90px;"  src="images/right-arrow.png">
-      </div>
-  </div>
+       <div class="open-on-toogle mt-5">
+        <div class="media toogle-media">
+          <img src="images/earth.png" class="mr-3" alt="...">
+          <div class="media-body">
+            <h1 class="mt-0  mb-3 srch-mun toogle-content">Search for MUNs</h1>
+            <p class="lead toogle-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              </p>
+              <button class="btn btn-primary header-flex-btn">Search</button>
+          </div>
+        </div>
+        <br>
+        <div class="media toogle-media">
+          <img src="images/person.png" class="mr-3" alt="...">
+          <div class="media-body">
+            <h1 class="mt-0  mb-3 org-mun toogle-content">Organise your MUN</h1>
+            <p class="lead toogle-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            </p>
+            <button class="btn btn-primary header-flex-btn">Organisers</button>
+          </div>
+        </div>
+   </div>
   
-  <div class="swiper-button-prev">
-      <img style="position:absolute; top:1000px; left:1190px;"  src="images/ellipse.png" >
-      <div class="left-arrow">
-          <img style="position:absolute; top:1025px; left:1210px;"  src="images/left-arrow.png">
-      </div>
-  </div>
-<!--What people have to say about us section-->
-    <div class="heading-over-section-four">What people have to say about us!</div>
-    <div style="top:400px; width: 60%;left:250px;" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/reviews.png" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/reviews.png" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/reviews.png" alt="Third slide">
-        </div>
-      </div>
-      
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span  class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+
+   <!------------------------------------------------------ Section2 Upcoming Mun Conferences--------------------------->
      
-    <!-- Contact Us section-->
-    <div class="heading-over-section-five">Get in Touch</div>
-    <div  class="row">
-      <div class="col">
-        <div class="container">
-          <div class="row centered-form">
-          <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 style="position: absolute;
-                left: 50px;
-                top:50px;
-                font-weight: 500;
-                font-size: 15px;
-                color: #15477A;
-                " class="panel-title">Say Something</h3>
-               </div>
-               <div class="panel-body">
-                <form role="form">
-                  <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                      <div class="form-group">
-                        <p style="position:absolute; top:92px;font-size: 10px; z-index: 9;background-color: white; color:#0E3660;left:80px; width:60px;">
-                          First Name</p>
-                        <input style="position: absolute;
-                        width: 200px;
-                        height: 42.26px;
-                        top:100px;
-                        left: 50px;
-                        border: 1px solid #2D5A88;
-                        box-sizing: border-box;
-                        border-radius: 5px;" type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="">
-                      </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                      <div class="form-group">
-                        <p style="position:absolute; top:92px;font-size: 10px; z-index: 9;background-color: white; color:#0E3660;left:220px; width:44px;">Email ID</p>
-                        <input style="position: absolute;
-                        width: 200px;
-                        left: 200px;
-                        top:100px;
-                        height: 42.26px;
-                        border: 1px solid #2D5A88;
-                        box-sizing: border-box;
-                        border-radius: 5px;" type="email" name="last_name" id="last_name" class="form-control input-sm" placeholder="">
-                      </div>
-                    </div>
-                  </div>
+   <div class="section-2 swiper-with-places mt-5  p-0">
+        <h1 class="section-heading mt-5 mx-3 ml-5">Upcoming MUN<br> Conference</h1>
+
+        <!--------------------------------------- Swiper------------------------------------------------------>
+
+  <div class="swiper-container ">
+    <div class="swiper-wrapper mt-5">
+      <div class="swiper-slide">
+        <div class="overlay-swiper-image"></div>
+        <div class="text-over-image">
+          <h1 class="display-6 ">DXCMUN <br> 2019</h1>
+          <p class="tagline-heading">Seattle, USA</p>
+          <button class="btn-over-image">Know More &nbsp;&rarr;</button>
+        </div>
+        <img class="swiper-image" src="images/seattle.png">
+      </div>
+      <div class="swiper-slide">
+        <div class="overlay-swiper-image"></div>
+        <div class="text-over-image tokyo ">
+          <h1 class="display-6 ">Harvard <br>World <br>MUN 2019</h1>
+          <p class="tagline-heading">Tokyo, Japan</p>
+          <button class="btn-over-image">Know More &nbsp;&rarr;</button>
+        </div>
+        <img class="swiper-image" src="images/tokyo.png">
+      </div>
+      <div class="swiper-slide">
+        <div class="overlay-swiper-image"></div>
+        <div class="text-over-image">
+          <h1 class="display-6 ">NMUN <br> 2019</h1>
+          <p class="tagline-heading">Washington DC</p>
+          <button class="btn-over-image">Know More&nbsp;&rarr;</button>
+        </div>
+        <img class="swiper-image" src="images/washington.png">
+      </div>
+      <div class="swiper-slide">
+        <div class="overlay-swiper-image"></div>
+        <div class="text-over-image">
+          <h1 class="display-6 ">DXCMUN <br> 2019</h1>
+          <p class="tagline-heading">Seattle, USA</p>
+          <button class="btn-over-image">Know More&nbsp;&rarr;</button>
+        </div>
+        <img class="swiper-image" src="images/seattle.png">
+      </div>
+      <div class="swiper-slide">
+        <div class="overlay-swiper-image"></div>
+        <div class="text-over-image tokyo ">
+          <h1 class="display-6 ">Harvard <br>World <br>MUN 2019</h1>
+          <p class="tagline-heading">Tokyo, Japan</p>
+          <button class="btn-over-image">Know More &nbsp;&rarr;</button>
+        </div>
+        <img class="swiper-image" src="images/tokyo.png">
+      </div>
+      <div class="swiper-slide">
+        <div class="overlay-swiper-image"></div>
+        <div class="text-over-image">
+          <h1 class="display-6 ">NMUN <br> 2019</h1>
+          <p class="tagline-heading">Washington DC</p>
+          <button class="btn-over-image">Know More&nbsp;&rarr;</button>
+        </div>
+        <img class="swiper-image" src="images/washington.png">
+      </div>
+    </div>
     
-                 
-    
-                  <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                      <div class="form-group">
-                        <p style="position:absolute; top:143px;font-size: 10px; z-index: 9;background-color: white; color:#0E3660;left:80px; width:41px;position:absolute;">Subject</p>
-                        <input style="position: absolute;
-                        width: 200px;
-                        height: 43px;
-                        left: 50px;
-                        top: 150px;
-                        
-                        border: 1px solid #2D5A88;
-                        box-sizing: border-box;
-                        border-radius: 5px;" type="text" name="password" id="password" class="form-control input-sm" placeholder="">
-                      </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                      <div class="form-group">
-                        <p style="position:absolute; top:142px;font-size: 10px; z-index: 9;background-color: white; color:#0E3660;left:220px; width:50px;">Company</p>
-                        <input style="position: absolute;
-                        width: 200px;
-                        height: 43px;
-                        left: 200px;
-                        top: 150px;
-                        
-                        border: 1px solid #2D5A88;
-                        box-sizing: border-box;
-                        border-radius: 5px;" type="text" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <p style="position:absolute; top:242px;font-size: 10px; z-index: 9;background-color: white; color:#0E3660;left:80px; width:74px;">Your Message</p>
-                    <input style="position: absolute;
-                    width: 440px;
-                    height: 107px;
-                    left: 50px;
-                    top: 250px;
-                    
-                    border: 1px solid #2D5A88;
-                    box-sizing: border-box;
-                    border-radius: 5px;" type="text" name="email" id="email" class="form-control input-sm" placeholder="">
-                  </div>
-                  
-                  <input style="position: absolute;
-                  width: 146px;
-                  font-weight:lighter;
-                  font-family: HelveticaNeue;
-                  font-size: 20px;
-                  line-height: 18px;
-                  height: 33px;
-                  left: 270px;
-                  top: 400px;
-                  
-                  background: #15477A;
-                  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
-                  border-radius: 5px !important;" type="submit" value="SEND" class="btn btn-info btn-block">
-                
-                </form>
-              </div>
+    <!--------------------------------------------------- Add Arrows -------------------------------------------------->
+
+    <div class="swiper-button-next next-btn"></div>
+    <div class="swiper-button-prev prev-btn"></div>
+  </div>
+
+      </div>
+    </body>
+    <!---------------------------------------------------Section-3  ALl you need in one place------------------------->
+
+    <div class="section-3 thumbnail-group mt-5 p-0">
+      <h1 class="section-heading mt-5 mx-3 ml-5">All you need<br> in one place</h1>
+      <div class="thumbnail-container mt-5">
+        <div class="thumbnail-item">
+          <div class="media">
+            <img class="mr-3" src="images/organisers.png" alt="Organisers Icon ">
+            <div class="media-body">
+              <h5 class="mt-0">Powerful Marketing and Conference Management Tools </h5>
+              <button class="btn-over-image mt-3 mb-3 btn-org">For Organisers</button>
+              <p class="media-paragraph">Run your conference's registration with a professional, powerful conference management system, hand-built for MUN. Advertise to 100k+ MUNers.</p c>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail-item">
+          <div class="media">
+            <img class="mr-3" src="images/participants.png" alt="Participants Icon">
+            <div class="media-body">
+              <h5 class="mt-0">The Biggest MUN Database with Easy Applications</h5>
+              <button class="btn-over-image mt-3 mb-3 btn-part">For Participants</button>
+            <p class="media-paragraph">Let mymun's professional, experienced team help you find the best group rate for your hotel and flights!</p>  
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail-item">
+          <div class="media">
+            <img class="mr-3" src="images/groups.png" alt="Groups Icon">
+            <div class="media-body">
+              <h5 class="mt-0"> Personalized Travel Service for Your Delegation</h5>
+              <button class="btn-over-image mt-3 mb-3 btn-grp">For Groups</button>
+             <p class="media-paragraph">Special rates for flights and hotels as well as exclusive insurance deals, adventure tours, car rentals and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnail-item">
+          <div class="media">
+            <img class="mr-3" src="images/everyone.png" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">The Best Flights, Hotels, Trips and Insurances</h5>
+              <button class="btn-over-image mt-3 mb-3 btn-every">For Everyone</button>
+              <p class="media-paragraph"> Looking for your next conference? Browse the largest database of Model UN, Model EU, and other political simulation conferences and apply with one click!</p>.
             </div>
           </div>
         </div>
       </div>
-      </div>
-      <div class="col">
-        <div class="contact">
-          <div style="position:absolute;
-          top:800px ;" class="contact-jumbotron ">
-           <span ><img  src="images/phone.png"> <p style="display: inline-block;" >Phone</span>
-            <h1>(+91) 999 741 5973 </h1>      
+    </div>
+    <!--------------------------------------------------- Swiper ----------------------------------------------------->
+
+      <div class="section-4 blog-thumbnail">
+        <h1 class="section-heading mx-5 mt-5 ml-5 mb-5">Our Blogs</h1>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card" style="width: 18rem;">
+                <div class="blue-overlay">
+                  <div class="overlay-item">
+                    <h6 class="mt-2">Dec<br>12</h6>
+                  </div>
+                  <div class="overlay-item">
+                    <p>Share:</p>
+                    <a href="#" title="Facebook Empty Link"><i class="fa fa-facebook"></i></a>
+                    <a href="#" title="Instagram Empty Link"><i class="fa fa-instagram ml-2"></i></a>
+                  </div>
+                </div>
+                <img src="images/card-image.png" class="card-img-top" alt="Card Image">
+                <div class="card-body">
+                  <h5 class="card-title">Quality vs Quantity of delegates! What matters the most in a MUN? </h5>
+                  <p class="card-text">Posted by Jane Doe</p>
+                  <a href="#" class="btn btn-primary btn-card">Read More &rarr;</a>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card" style="width: 18rem;">
+              <div class="blue-overlay">
+                <div class="overlay-item">
+                  <h6 class="mt-2">Dec<br>12</h6>
+                </div>
+                <div class="overlay-item">
+                  <p>Share:</p>
+                  <a href="#" title="Facebook Empty Link"><i class="fa fa-facebook"></i></a>
+                  <a href="#" title="Instagram Empty Link"><i class="fa fa-instagram ml-2"></i></a>
+                </div>
+              </div>
+              <img src="images/card-image.png" class="card-img-top" alt="Card Image">
+              <div class="card-body">
+                <h5 class="card-title">Quality vs Quantity of delegates! What matters the most in a MUN? </h5>
+                <p class="card-text">Posted by Jane Doe</p>
+                <a href="#" class="btn btn-primary btn-card">Read More &rarr;</a>
+              </div>
           </div>
         </div>
-        <div style="position:absolute;
-        top:880px ;" class="contact-jumbotron ">
-          <span><img src="images/mail.png"><p style="display: inline-block;" >Email</p></span>
-          <h1><a style="color: #0E3660 ;" href="info@internationalmun.org" target="_blank">info@internationalmun.org</a> </h1>      
+        <div class="swiper-slide">
+          <div class="card" style="width: 18rem;">
+            <div class="blue-overlay">
+              <div class="overlay-item">
+                <h6 class="mt-2">Dec<br>12</h6>
+              </div>
+              <div class="overlay-item">
+                <p>Share:</p>
+                <a href="#" title="Facebook Empty Link"><i class="fa fa-facebook"></i></a>
+                <a href="#" title="Instagram Empty Link"><i class="fa fa-instagram ml-2"></i></a>
+              </div>
+            </div>
+            <img src="images/card-image.png" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <h5 class="card-title">Quality vs Quantity of delegates! What matters the most in a MUN? </h5>
+              <p class="card-text">Posted by Jane Doe</p>
+              <a href="#" class="btn btn-primary btn-card">Read More &rarr;</a>
+            </div>
         </div>
-        <div style="position:absolute;
-        top:960px ;" class="contact-jumbotron ">
-                   <span><img src="images/location.png"><p style="display: inline-block;" >Address</Address></p></span>
-          <h1>E-73 Sector 50, Gautam Budh &#13;&#10;Nagar, Noida, India - 201 304 </h1>      
-        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card" style="width: 18rem;">
+          <div class="blue-overlay">
+            <div class="overlay-item">
+              <h6 class="mt-2">Dec<br>12</h6>
+            </div>
+            <div class="overlay-item">
+              <p>Share:</p>
+              <a href="#" title="Facebook Empty Link"><i class="fa fa-facebook"></i></a>
+              <a href="#" title="Instagram Empty Link"><i class="fa fa-instagram ml-2"></i></a>
+            </div>
+          </div>
+          <img src="images/card-image.png" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Quality vs Quantity of delegates! What matters the most in a MUN? </h5>
+            <p class="card-text">Posted by Jane Doe</p>
+            <a href="#" class="btn btn-primary btn-card">Read More &rarr;</a>
+          </div>
       </div>
     </div>
-   
-  <!-- Section 5 Footer-->
-  <div class="footer-container ">
-    <div class="row-footer">
-      <div class="column">
-        <div class="footer-jumbotron">
-          <h1 style="font-style: normal;
-         font-weight: 500;
-font-size: 24px;
-line-height: 29px;
-          ">About mymun</h1>
-          <p style="font-style: normal;
-          font-weight: lighter;
-          font-size: 12px;
-          line-height: 18px;
-          text-align: justify;"><br>The ultimate MUN database, conference management tool, and social network.<br><br>Join over 100,000 muners to discover new MUN conferences, organize your own MUN conference, research and publish Position Papers, travel cheaply and securely, and make friends for life.</p>
+    <div class="swiper-slide">
+      <div class="card" style="width: 18rem;">
+        <div class="blue-overlay">
+          <div class="overlay-item">
+            <h6 class="mt-2">Dec<br>12</h6>
+          </div>
+          <div class="overlay-item">
+            <p>Share:</p>
+            <a href="#" title="Facebook Empty Link"><i class="fa fa-facebook"></i></a>
+            <a href="#" title="Instagram Empty Link"><i class="fa fa-instagram ml-2"></i></a>
+          </div>
         </div>
-      </div>
-      <div style=" width:100px; margin-right:10px;"class="column">
-        <div  class="footer-jumbotron">
-          <img style="margin-left:10px; height:255px; width:60px;" src="images/line.png">
-      </div>
-    </div>
-      <div style="margin-left:0px; width:250px;"class="column">
-        <div class="footer-jumbotron">
-          <ul>
-            <a style="text-decoration: none ;" href="#"><li>Search for IMUNs</li></a>
-            <a style="text-decoration: none ;" href="#"><li>Organise IMUN</li></a>
-            <a style="text-decoration: none ;" href="#"><li>Features</li></a>
-            <a style="text-decoration: none ;" href="#"><li>Blogs</li></a>
-          </ul>
+        <img src="images/card-image.png" class="card-img-top" alt="Card Image">
+        <div class="card-body">
+          <h5 class="card-title">Quality vs Quantity of delegates! What matters the most in a MUN? </h5>
+          <p class="card-text">Posted by Jane Doe</p>
+          <a href="#" class="btn btn-primary btn-card">Read More &rarr;</a>
         </div>
-      </div>
-      <div style="margin-left:0px; width:200px;"class="column">
-        <div class="footer-jumbotron">
-          <ul>
-            <a style="text-decoration: none ;" href="#"><li style=" font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 15px;
-              margin-bottom: 45px;">MUN Conference Highlights</li></a>
-            <a style="text-decoration: none ;" href="#"><li style=" font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 15px;
-              margin-bottom: 45px;">MUN Conference List</li></a>
-            <a style="text-decoration: none ;" href="#"><li style=" font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 15px;
-              margin-bottom: 45px;">MUN Conference Calendar</li></a>
-            <a style="text-decoration: none ;" href="#"><li style=" font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 15px;
-              margin-bottom: 45px;">MUN Conference Map</li></a>
-          </ul>
-        </div>
-      </div>
-      <div style="width:100px;"class="column">
-        <div class="footer-jumbotron">
-          <img style="margin-left:0px; height:255px; width:80px;"  src="images/line.png">
-      </div>
-    </div>
-      <div style="width:300px;"  class="column">
-        <div class="footer-jumbotron">
-          <span><img src="images/footer-phone.png"><p style="display:inline-block; font-family: Roboto;">Phone</p></span>
-          <h1 style="font-style: normal;
-          font-size: 15px;
-          margin-bottom:30px;
-          margin-left:60px;
-          line-height: 10px;">(+91) 999 741 5973</h1>
-          <div class="footer-jumbotron">
-            <span><img src="images/footer-mail.png"><p style="display:inline-block; font-family: Roboto; ">Email</p></span>
-            <h1 style="font-style: normal;
-            font-size: 15px;
-            margin-bottom:30px;
-            margin-left:60px;
-            line-height: 10px;">info@internationalmun.org </h1>
-            <div class="footer-jumbotron">
-              <span><img src="images/footer-location.png"><p style="display:inline-block; font-family: Roboto;
-              ">Address</Address></p></span>
-              <h1 style="font-style: normal;
-              font-size: 15px;
-              margin-bottom:30px;
-              margin-left:60px;
-              line-height: 20px;">E-73 Sector 50, Gautam Budh 
-Nagar, Noida, India - 201 304 </h1>
-        </div>
-      </div>
     </div>
   </div>
+  <div class="swiper-slide">
+    <div class="card" style="width: 18rem;">
+      <div class="blue-overlay">
+        <div class="overlay-item">
+          <h6 class="mt-2">Dec<br>12</h6>
+        </div>
+        <div class="overlay-item">
+          <p>Share:</p>
+          <a href="#" title="Facebook Empty Link"><i class="fa fa-facebook"></i></a>
+          <a href="#" title="Instagram Empty Link"><i class="fa fa-instagram ml-2"></i></a>
+        </div>
+      </div>
+      <img src="images/card-image.png" class="card-img-top" alt="Card Image">
+      <div class="card-body">
+        <h5 class="card-title">Quality vs Quantity of delegates! What matters the most in a MUN? </h5>
+        <p class="card-text">Posted by Jane Doe</p>
+        <a href="#" class="btn btn-primary btn-card">Read More &rarr;</a>
+      </div>
+  </div>
+  </div>
+           </div>
+ <!-- Add Arrows -->
+ <div class="swiper-button-next next-btn"></div>
+ <div class="swiper-button-prev prev-btn "></div> 
+ </div>
+ <!---------------------------------Section-5 Reviews Slider-------------------------------------->
+      
+    <div class="section-5 review-slider">
+        <h1 class="section-heading mx-5 mt-5 ml-5 mb-5">What People Have To Say About Us!</h1>
+        <div class="swiper-container swiper-reviews">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="review-image" src="images/reviews.png">
+            </div>
+            <div class="swiper-slide">
+              <img class="review-image" src="images/reviews.png">
+            </div>
+            <div class="swiper-slide">
+              <img class="review-image" src="images/reviews.png">
+            </div>
+            <div class="swiper-slide">
+              <img class="review-image" src="images/reviews.png">
+            </div>
+            <div class="swiper-slide">
+              <img class="review-image" src="images/reviews.png">
+            </div>
+            <div class="swiper-slide">
+              <img class="review-image" src="images/reviews.png">
+            </div>
+            
+          </div>
+          <br>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <!-------------------------------Section-6 Contact us-----
+      <div class="section-5 contact-section">
+        <h1 class="section-heading mx-5 mt-5 ml-5 mb-5">Get in Touch</h1>
+        <div class="contact-container">
+          <div class="contact-item">
+            <p class="form-head">Say Something</p>
+            <form>
+              <fieldset>
+                
+                <legend>
+                  Login Form
+                </legend>
+                <div class="box">
+                  <label for="First Name">
+                    Name:
+                  </label>
+                  <input type="text" id="FirstName" placeholder="Enter Your Full name" required>
+                </div>
+                <div class="box">
+                  
+                  <label for="email">
+                    E-mail:
+                  </label>
+                  <input type="email" id="email" placeholder="xyz@gmail.com" required>
+                </div>
+                
+                <div class="box">
+                  
+                  <label for="website">
+                    Website:
+                  </label>
+                  
+                  <input type="text" id="website" placeholder="Website" required pattern="https?://.+">
+                </div>
+                
+                <div class="box">
+                  
+                  <label for="pass">
+                    Password:
+                  </label>
+                  
+                  <input type="password" id="pass" placeholder="**********" required>
+                </div>
+                
+                <div class="box">
+                  
+                  <input type="submit" value="Send" id="btn" >
+                </div>
+                
+              </fieldset>
+            </form>
+          </div>
+          <div class="contact-item"></div>
+        </div>
+      </div>
+      ------------------------------->
 
-    </body>
-    <!-- Swiper JS -->
-  <script src="js/swiper.min.js"></script>
-    <!-- Initialize Swiper -->
-  <script src="js/section2-initialize.js"></script>
-    <script src="js/section4-initialize.js"></script>
+  </body>
+    <!-----------------------------loader before the entire body loads----------------------------------------------->
     
+    <script>
+     var load = document.getElementById('loader');
+     function myloader()
+     {
+       load.style.display="none";
+     }
+   </script>
+    <script src="js/swiper-with-places.js"></script>
+    <script src="js/reviews.js"></script>
 </html>
