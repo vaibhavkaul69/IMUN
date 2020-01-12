@@ -15,9 +15,12 @@ html,body
 {
     height:100vh;
     width:100%;
+    position:fixed;
+    overflow-y:hidden;
     background:#121e32 url("../images/navbar-logo.png") no-repeat center;
     animation:preloader 1s ease infinite alternate;
     transition: all 0.5s ease ;
+    z-index:99999;
 }
 
 @keyframes preloader
