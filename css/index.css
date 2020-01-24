@@ -6,10 +6,7 @@ html,body
     font-family: Montserrat;
     overflow-x: hidden;
    background-size: cover;
-   height: 100vh;
-   width: 100%;
- 
-   background-attachment: fixed;
+ background-attachment: fixed;
 }
 #loader
 {
@@ -352,44 +349,111 @@ line-height:22px !important;
         
       }
 /*******************Section-6 Contact us*************/
-      .contact-container
+      .contact-form
       {
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        width:100%;
-      } 
-      .contact-item
+          min-height:400px;
+          width:100%;
+          padding:50px;
+          border-radius:20px;
+          box-shadow:0 0 8px 0 #0009;
+      }
+      
+      .contact-form p
       {
-        min-width:200px;
-        min-height:200px;
-        border:1px solid black;
-        margin:25px;
-      } 
-      form {
-        width: 90%;
-        margin: 0 auto;
-        color:#121e32;
-        }
+        color:#2948ff;
         
-        .box {
-        padding: 0.5rem;
-        color:#121e32;
-        color:#121e32;
-        }
-        
-        label {
-        display: inline;
-        }
-        
-        input {
-        display: inline-block;
-        border-color: #121e32;
-        border-radius:10px;
-        width: 100%;
-        padding: 1rem;
-        }
-        
+      }
+      .contact-form form label
+      {
+         width:100%;
+         color:#2948ff;
+         background:white;
+         position: relative;
+         top:20px;
+         left:20px;
+         width:70px;
+      }
+      .contact-form:focus-within
+      {
+        box-shadow:0 0 8px 0 #2948ff;
+      }
+      .contact-form form  input
+      {
+          width:100%;
+          height:50px;
+          padding:10px;
+          border-radius:10px;
+          border:1px solid  #2948ff;
+          
+      }
+      .contact-form form textarea
+      {
+          height:100px;
+          width:100%;
+          border-radius:10px;
+          border:1px solid  #2948ff;
+          padding:20px;
+      }
+      .contact-address
+      {
+        min-height:300px;
+      }
+      .contact-info
+      {
+       
+        padding:50px;
+        margin-top:200px;
+      }
+
+      .contact-info p
+      {
+        display:inline;
+        color:grey;
+      }
+     .contact-info h5:nth-of-type(1)
+     {
+       margin-left:4rem;
+       color:#2948ff;
+     }
+     .contact-info a h5:nth-child(1)
+     {
+           margin-left:5rem;
+           text-decoration:none;
+             color:#2948ff;
+     }
+      .contact-info h5:nth-of-type(2)
+     {
+       margin-left:4.8rem;
+             color:#2948ff;
+     }
+     .border-active
+     {
+         border-right:1px solid #fff;
+     }
+/***************Footer Section*********************/
+.footer-section
+{
+    width:100%;
+    min-height:300px;
+    background:#121e32;
+    color:#fff;
+    font-size:0.8rem;
+}
+.footer-section .row li
+{
+    margin:30px;
+    list-style-type: none;
+}
+    .footer-info p,
+    .footer-info h5
+    {
+        font-size:0.8rem;
+    }   
+    .footer-info h5
+    {
+      margin-left:3rem;
+      color:#fff;
+    } 
 /********************Responsive Designs*******************************/
 @media only screen and (max-width:1251px)
 {
@@ -525,12 +589,14 @@ line-height:22px !important;
     display: block;
     }
     
-    #masthead {
-    }
+   
     }
     
-    @media all and (min-width:60rem) {
-    label {
+    @media all and (min-width:60rem)
+     {
+
+    label 
+    {
     display: inline;
     width: 90px;
     float: left;
@@ -548,4 +614,34 @@ line-height:22px !important;
     #masthead {
     padding: 9rem;
     }
+     .border-active
+     {
+         border-right:1px solid #fff;
+     }
+}
+ 
+      @media (max-width:576px)
+      {
+        .border-active,
+        .border-active-small
+     {
+       border:none;
+       width:100%;
+         border-bottom:1px solid #fff;
+     }
+      }
+
+    @media (max-width:430px)
+    {
+      .contact-info
+      {
+       
+        padding:0px;
+        margin-top:20px;
+
+      }
+      .contact-info h5
+      {
+        font-size:0.8rem;
+      }
     }
